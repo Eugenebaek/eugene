@@ -4,7 +4,7 @@ import {Typography} from "@material-ui/core";
 import useStyles from './styles';
 
 function Navbar() {
-    const classes = useStyles;
+    const classes = useStyles();
     return (
         <AppBar className={classes.appBar}>
             <Typography>Hello World</Typography>

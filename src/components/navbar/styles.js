@@ -1,4 +1,4 @@
-import {makeStyles} from "@material-ui/core";
+import {makeStyles} from "@material-ui/core/styles";
 
 export default makeStyles({
     root: {
@@ -18,5 +18,6 @@ export default makeStyles({
         justifyContent: 'space-between',
         alignItems: 'center',
         padding: '10px 50px',
+        color: '#032329',
     },
 });
