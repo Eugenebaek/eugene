@@ -13,6 +13,8 @@ export default makeStyles({
     mainTitle: {
         display: 'flex',
         borderStyle: 'solid',
+        color: '#FFF',
+        fontSize: '200px',
     },
 
 });
