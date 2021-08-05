@@ -2,13 +2,13 @@ import React from 'react';
 import useStyles from './styles';
 import {Typography} from "@material-ui/core";
 
-function Intro() {
+function Experience() {
     const classes = useStyles();
     return (
         <div className={classes.root}>
-            <Typography className={classes.mainTitle}>Eugene Baek</Typography>
+            <Typography className={classes.mainTitle}>Experience</Typography>
         </div>
     );
 }
 
-export default Intro;
+export default Experience;

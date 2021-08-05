@@ -1,23 +1,29 @@
 import {makeStyles} from "@material-ui/core/styles";
 
 export default makeStyles({
-    root: {
-        background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
-        border: 0,
-        borderRadius: 3,
-        boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
-        color: 'white',
-        height: 48,
-        padding: '0 30px',
+    topLeft: {
+        position: 'fixed',
+        top: '40px',
+        left: '40px',
     },
-    appBar: {
-        borderRadius: 15,
-        margin: '30px 0',
-        display: 'flex',
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        padding: '10px 50px',
-        color: '#032329',
+    topRight: {
+        position: 'fixed',
+        top: '40px',
+        right: '40px',
+        textOrientation: 'mixed',
+        writingMode: 'vertical-rl',
+},
+    bottomLeft: {
+        position: 'fixed',
+        bottom: '40px',
+        left: '40px',
+        textOrientation: 'mixed',
+        writingMode: 'vertical-rl',
+        transform: 'rotate(180deg)',
+    },
+    bottomRight: {
+        position: 'fixed',
+        bottom: '40px',
+        right: '40px',
     },
 });
