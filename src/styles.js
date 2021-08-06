@@ -1,5 +1,5 @@
 import {makeStyles} from "@material-ui/core/styles";
-import noise from './assets/noise.png';
+import noise from './assets/images/noise.png';
 
 export default makeStyles({
     root: {

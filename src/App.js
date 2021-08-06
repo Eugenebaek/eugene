@@ -8,14 +8,36 @@ import Experience from "./components/experience/experience";
 import Portfolio from "./components/portfolio/portfolio";
 import {createTheme} from "@material-ui/core/styles";
 import {ThemeProvider} from "@material-ui/styles";
-import noise from './assets/noise.png';
+import migraRegular from "./assets/fonts/Migra-Regular.otf"
+
+const migra = {
+    fontFamily: 'Migra',
+    fontStyle: 'normal',
+    fontDisplay: 'swap',
+    fontWeight: 400,
+    src: `
+    local('Migra'),
+    local('Migra-Regular'),
+    url(${migraRegular}) format('otf')
+  `,
+};
 
 const theme = createTheme({
     palette: {
         background: {
-            default: '#171717',
+            default: '#032329',
         }
     },
+    typography: {
+        fontFamily: migraRegular,
+    },
+    overrides: {
+        MuiCssBaseline: {
+            '@global': {
+                '@font-face': [migra],
+            }
+        }
+    }
 })
 
 
