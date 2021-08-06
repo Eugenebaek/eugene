@@ -8,13 +8,14 @@ import Experience from "./components/experience/experience";
 import Portfolio from "./components/portfolio/portfolio";
 import {createTheme} from "@material-ui/core/styles";
 import {ThemeProvider} from "@material-ui/styles";
+import noise from './assets/noise.png';
 
 const theme = createTheme({
     palette: {
         background: {
-            default: '#0F0F11',
+            default: '#171717',
         }
-    }
+    },
 })
 
 

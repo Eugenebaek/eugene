@@ -6,14 +6,12 @@ export default makeStyles({
         borderStyle: 'solid',
         height: '56.25vw',
         justifyContent: 'center',
-
-
     },
 
     mainTitle: {
         display: 'flex',
         borderStyle: 'solid',
-        color: '#808080',
+        color: '#fafafa',
         fontSize: '200px',
     },
 
