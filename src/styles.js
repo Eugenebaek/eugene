@@ -1,13 +1,16 @@
 import {makeStyles} from "@material-ui/core/styles";
+import noise from './assets/noise.png';
 
 export default makeStyles({
     root: {
-        // backgroundImage: 'url("./assets/static.png")',
-        backgroundColor: '#0F0F11',
-        position: 'absolute',
         width: '100%',
+        height: '100%',
+        backgroundImage: `url(${noise})`,
+        position: 'absolute',
         backgroundRepeat: 'repeat',
-        border: 'solid red',
-        mixBlendMode: 'overlay',
+        left: '0px',
+        top: '0px',
+        pointerEvents: 'none',
+        zIndex: '999',
     },
 });
