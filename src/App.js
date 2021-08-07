@@ -32,7 +32,7 @@ function App() {
                 <Experience/>
                 <Portfolio/>
             </ThemeProvider>
-            <div className={classes.noise}/>
+            {/*<div className={classes.noise}/>*/}
         </React.Fragment>
     );
 }
