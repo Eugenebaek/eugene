@@ -3,15 +3,31 @@ import {makeStyles} from "@material-ui/core/styles";
 export default makeStyles({
     root: {
         display: 'grid',
-        borderStyle: 'solid',
-        height: '56.25vw',
+        gridTemplateColumns: '1fr 5fr 1fr',
+        gridTemplateRows: '4fr 3fr 1fr 4fr',
+        justifyContent: 'center',
+        alignItems: 'center',
     },
 
     mainTitle: {
-        display: 'flex',
-        borderStyle: 'solid',
+        textAlign: 'center',
+        gridColumnStart: '2',
+        gridRowStart: '2',
+        // borderStyle: 'solid',
         color: '#fff',
-        fontSize: '200px',
+        fontSize: '136px',
     },
+
+    subTitle: {
+        gridColumnStart: '2',
+        gridRowStart: '3',
+        // borderStyle: 'solid',
+        color: '#fff',
+        fontSize: '30px',
+        textAlign: 'center',
+    },
+
+    star: {
+    }
 
 });
