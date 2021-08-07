@@ -8,36 +8,15 @@ import Experience from "./components/experience/experience";
 import Portfolio from "./components/portfolio/portfolio";
 import {createTheme} from "@material-ui/core/styles";
 import {ThemeProvider} from "@material-ui/styles";
-import migraRegular from "./assets/fonts/Migra-Regular.otf"
-
-const migra = {
-    fontFamily: 'Migra',
-    fontStyle: 'normal',
-    fontDisplay: 'swap',
-    fontWeight: 400,
-    src: `
-    local('Migra'),
-    local('Migra-Regular'),
-    url(${migraRegular}) format('otf')
-  `,
-};
 
 const theme = createTheme({
     palette: {
         background: {
-            default: '#032329',
+            default: '#0F0F11',
         }
     },
-    typography: {
-        fontFamily: migraRegular,
-    },
-    overrides: {
-        MuiCssBaseline: {
-            '@global': {
-                '@font-face': [migra],
-            }
-        }
-    }
+    typography: {},
+    overrides: {}
 })
 
 
@@ -47,14 +26,13 @@ function App() {
         <React.Fragment>
             <ThemeProvider theme={theme}>
                 <CssBaseline/>
-                <div className={classes.root}>
-                    <Navbar/>
-                    <Intro/>
-                    <About/>
-                    <Experience/>
-                    <Portfolio/>
-                </div>
+                <Navbar/>
+                <Intro/>
+                <About/>
+                <Experience/>
+                <Portfolio/>
             </ThemeProvider>
+            <div className={classes.noise}/>
         </React.Fragment>
     );
 }
