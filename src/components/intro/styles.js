@@ -2,20 +2,19 @@ import {makeStyles} from "@material-ui/core/styles";
 
 export default makeStyles({
     root: {
-        display: 'grid',
-        gridTemplateColumns: '1fr 5fr 1fr',
-        gridTemplateRows: '4fr 3fr 1fr 4fr',
+        display: 'flex',
+        flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
+        height: '100vh',
     },
 
     mainTitle: {
-        textAlign: 'center',
         gridColumnStart: '2',
         gridRowStart: '2',
         // borderStyle: 'solid',
-        color: '#fff',
-        fontSize: '136px',
+        color: '#FFF',
+        margin: '25px auto 25px auto',
     },
 
     subTitle: {
@@ -23,11 +22,15 @@ export default makeStyles({
         gridRowStart: '3',
         // borderStyle: 'solid',
         color: '#fff',
-        fontSize: '30px',
         textAlign: 'center',
     },
 
+    italicize: {
+        fontStyle: 'italic',
+    },
+
     star: {
+        verticalAlign: 'middle',
     }
 
 });

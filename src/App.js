@@ -11,11 +11,15 @@ import {ThemeProvider} from "@material-ui/styles";
 
 const theme = createTheme({
     palette: {
+        primary: {
+            main: '#fff',
+        },
         background: {
             default: '#0F0F11',
         }
     },
-    typography: {},
+    typography: {
+    },
     overrides: {}
 })
 
