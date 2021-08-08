@@ -15,6 +15,7 @@ export default makeStyles({
         // borderStyle: 'solid',
         color: '#FFF',
         margin: '25px auto 25px auto',
+        fontSize: '8rem',
     },
 
     subTitle: {
@@ -23,6 +24,7 @@ export default makeStyles({
         // borderStyle: 'solid',
         color: '#fff',
         textAlign: 'center',
+        fontSize: '2.85rem',
     },
 
     italicize: {
