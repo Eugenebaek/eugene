@@ -10,18 +10,12 @@ export default makeStyles({
     },
 
     mainTitle: {
-        gridColumnStart: '2',
-        gridRowStart: '2',
-        // borderStyle: 'solid',
         color: '#FFF',
         margin: '25px auto 25px auto',
         fontSize: '8rem',
     },
 
     subTitle: {
-        gridColumnStart: '2',
-        gridRowStart: '3',
-        // borderStyle: 'solid',
         color: '#fff',
         textAlign: 'center',
         fontSize: '2.85rem',
