@@ -18,7 +18,7 @@ export default makeStyles({
 
     aboutBody: {
         color: '#FFF',
-        fontSize: '1.5rem',
+        fontSize: '20px',
         gridColumnStart: '2',
         gridRowStart: '2',
     },
